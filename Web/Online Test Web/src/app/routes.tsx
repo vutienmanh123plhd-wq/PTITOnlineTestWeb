@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { AuthLayout } from "./components/layouts/AuthLayout";
 import { UserLayout } from "./components/layouts/UserLayout";
 import { AdminLayout } from "./components/layouts/AdminLayout";
@@ -15,7 +15,7 @@ import { Statistics } from "./components/admin/Statistics";
 import { StudentResults } from "./components/admin/StudentResults";
 import { ManageUsers } from "./components/admin/ManageUsers";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <AuthLayout />,
